@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let arr = [];
+    // function ernum(num) {
+    //     // console.log(num)
+    //     if (num < 10) {
+    //         return arr.push(num);
+    //     }
+    //     arr.push(num % 10);
+    //     // console.log(arr)
+    //     ernum((num - num % 10) / 10)
+    //     return arr;
+    // }
+    // console.log(ernum(123))
+    //上面的代码与预期不符，我以为是输入的数字，结果他直接给我数组，呵呵呵
+    //打脸 那不是数组是单链表
+    /**
+     * Definition for singly-linked list.
+     * function ListNode(val) {
+     *     this.val = val;
+     *     this.next = null;
+     * }
+     */
+    function sum(l1, l2) {
+        let listNode = new ListNode(null)
+        if (l1.val && l2.val) {
+            while (l1.next && l2.next) {
+                if (l1.val + l2.val < 10) {
+                    listNode.val += l1.val+l2.val
+                }else{
+                    listNode.val+=(l1.val+l2.val)%10
+                    listNode.next=1
+                }
+            }
+            // var len=l1.length<l2.length?l1.length:l2.length
+            // for(let i=0;i<len;i++){
+            //     if(l1[i]+l2[i]<10){
+            //         if(arr[i]){
+            //             arr[i]+=l1[i]+l2[i]
+            //         }else{
+            //             arr[i]=l1[i]+l2[i]
+            //         }
+            //     }else{
+            //         if(arr[i]){   
+            //             arr[i]+=(l1[i]+l2[i])%10
+            //             arr.push(1)
+            //         }else{
+            //             arr[i]=(l1[i]+l2[i])%10
+            //             arr.push(1)
+            //         }
+            //     }
+            // }
+        }
+        return arr
+    }
+
+    // [2,4,3]
+    // [5,6,4]
+    // console.log(sum([2,4,3],[5,6,4]))
+    console.log(null + 10)
+
+
+</script>
+
+</html>
