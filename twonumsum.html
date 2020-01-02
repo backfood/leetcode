@@ -32,6 +32,56 @@
      *     this.val = val;
      *     this.next = null;
      * }
+     * 
+     * 
+     * 
+     * Line 14 in solution.js
+   let ln = new listNode(null)
+            ^
+ReferenceError: listNode is not defined
+    Line 14: Char 13 in solution.js (addTwoNumbers)
+    Line 42: Char 19 in solution.js (Object.<anonymous>)
+    Line 16: Char 8 in runner.js (Object.runner)
+    Line 28: Char 26 in solution.js (Object.<anonymous>)
+    Line 689: Char 30 in loader.js (Module._compile)
+    Line 700: Char 10 in loader.js (Object.Module._extensions..js)
+    Line 599: Char 32 in loader.js (Module.load)
+    Line 538: Char 12 in loader.js (tryModuleLoad)
+    Line 530: Char 3 in loader.js (Function.Module._load)
+    Line 742: Char 12 in loader.js (Function.Module.runMain)
+
+    Line 19 in solution.js
+            list.val += (l1.val + l2.val) % 10
+            ^
+TypeError: Cannot read property 'val' of null
+    Line 19: Char 13 in solution.js (addTwoNumbers)
+    Line 43: Char 19 in solution.js (Object.<anonymous>)
+    Line 16: Char 8 in runner.js (Object.runner)
+    Line 29: Char 26 in solution.js (Object.<anonymous>)
+    Line 689: Char 30 in loader.js (Module._compile)
+    Line 700: Char 10 in loader.js (Object.Module._extensions..js)
+    Line 599: Char 32 in loader.js (Module.load)
+    Line 538: Char 12 in loader.js (tryModuleLoad)
+    Line 530: Char 3 in loader.js (Function.Module._load)
+    Line 742: Char 12 in loader.js (Function.Module.runMain)
+Line 17 in solution.js
+            list.val += (l1.val + l2.val)
+            ^
+ReferenceError: list is not defined
+    Line 17: Char 13 in solution.js (addTwoNumbers)
+    Line 44: Char 19 in solution.js (Object.<anonymous>)
+    Line 16: Char 8 in runner.js (Object.runner)
+    Line 30: Char 26 in solution.js (Object.<anonymous>)
+    Line 689: Char 30 in loader.js (Module._compile)
+    Line 700: Char 10 in loader.js (Object.Module._extensions..js)
+    Line 599: Char 32 in loader.js (Module.load)
+    Line 538: Char 12 in loader.js (tryModuleLoad)
+    Line 530: Char 3 in loader.js (Function.Module._load)
+    Line 742: Char 12 in loader.js (Function.Module.runMain)
+
+
+
+     * 
      */
     function sum(l1, l2) {
         let listNode = new ListNode(null)
